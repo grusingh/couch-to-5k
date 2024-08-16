@@ -42,17 +42,30 @@ export default function Index() {
   const currentStepType = session?.workout[currentStep]?.type || '';
   const totalSteps = session?.workout.length || 0;
 
+  function playSound() {
+    const audio = new Audio('/mixkit-attention-bell-ding-586.wav');
+    audio.play();
+  }
+
   useEffect(() => {
     if (!session) {
       return;
     }
 
     const interval = setInterval(() => {
-      setElapsedTime((prev) => prev + 1);
+      setElapsedTime((prev) => {
+        return prev + 1;
+      });
     }, 1000);
 
     return () => clearInterval(interval);
   }, [session, setElapsedTime]);
+
+  useEffect(() => {
+    if (elapsedTime === currentStepDuration) {
+      playSound();
+    }
+  }, [currentStepDuration, elapsedTime]);
 
   function handleNextStep() {
     if (!session) {
