@@ -14,6 +14,21 @@ function getProgram(week: number, day: number) {
   return session;
 }
 
+function formatStepType(type: string) {
+  switch (type) {
+    case 'run':
+      return '🏃🏽‍♀️‍➡️ run';
+    case 'walk':
+      return ' 🚶🏿‍♀️‍➡️ walk';
+    case 'warmup':
+      return '🤸🏽‍♀️ warm up';
+    case 'cooldown':
+      return '🧘🏽‍♀️ cool down';
+    default:
+      return '';
+  }
+}
+
 export default function Index() {
   const router = useRouter();
   const { week: weekString, day: dayString } = router.query;
@@ -65,29 +80,29 @@ export default function Index() {
 
   return (
     <Layout>
-      <div className="grid grid-cols-1 grid-rows-3 flex-grow">
+      <div className="grid grid-cols-1 grid-rows-[1fr_4fr_1fr] flex-grow">
         <header className="flex flex-col justify-center items-center">
           <h2 className="text-2xl font-bold">
             Week {week} / Day {day}
           </h2>
-          <p className="px-8 py-4">{session.description}</p>
+          <p className="px-2 pt-4">{session.description}</p>
         </header>
-        <section className="flex flex-col justify-center items-center">
-          <div className="text-center">
-            <h3 className="font-extrabold text-green-800">
-              <span className="text-5xl">
-                {currentStepType === 'run' ? ' 🏃🏽‍♀️‍➡️' : '🚶🏿‍♀️‍➡️ '}
-              </span>
-              <span className="text-6xl">{currentStepType}</span>
-            </h3>
-            {isTimeVisible ? (
-              <div className="text-4xl p-8 text-green-800 font-bold">
-                {elapsedTime} / {currentStepDuration} sec
-              </div>
-            ) : (
-              <div className="p-8">✅ Step Completed</div>
-            )}
-          </div>
+        <section className="flex flex-col justify-center items-center text-center">
+          <h2 className="text-2xl font-bold">
+            Step {currentStep + 1} of {totalSteps}
+          </h2>
+          <h3 className="font-extrabold text-green-800 text-6xl my-8">
+            {formatStepType(currentStepType)}
+          </h3>
+          {isTimeVisible ? (
+            <div className="text-4xl text-green-800 font-bold">
+              {elapsedTime} / {currentStepDuration} sec
+            </div>
+          ) : (
+            <div className="text-xl text-green-800 font-bold">
+              ✅ Step Completed
+            </div>
+          )}
         </section>
         <div className="text-center">
           {isTimeVisible ? null : (
