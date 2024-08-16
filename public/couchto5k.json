@@ -1,0 +1,137 @@
+[
+  {
+    "week": 1,
+    "day": 1,
+    "workout": [
+      { "type": "warmup", "duration": 300 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "cooldown", "duration": 300 }
+    ]
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "workout": [
+      { "type": "warmup", "duration": 300 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "cooldown", "duration": 300 }
+    ]
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "workout": [
+      { "type": "warmup", "duration": 300 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "run", "duration": 60 },
+      { "type": "walk", "duration": 90 },
+      { "type": "cooldown", "duration": 300 }
+    ]
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "description": "Today we're going to run for 90 seconds and walk for 2 minutes. We'll repeat this 6 times.",
+    "workout": [
+      { "type": "walk", "duration": 300 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "walk", "duration": 300 }
+    ]
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "description": "Today we're going to run for 90 seconds and walk for 2 minutes. We'll repeat this 6 times.",
+    "workout": [
+      { "type": "walk", "duration": 300 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "walk", "duration": 300 }
+    ]
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "description": "Today we're going to run for 90 seconds and walk for 2 minutes. We'll repeat this 6 times.",
+    "workout": [
+      { "type": "walk", "duration": 300 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "run", "duration": 90 },
+      { "type": "walk", "duration": 120 },
+      { "type": "walk", "duration": 300 }
+    ]
+  }
+]
