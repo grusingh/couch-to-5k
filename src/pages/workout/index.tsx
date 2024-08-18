@@ -1,4 +1,4 @@
-import Layout from '@/components/workout/Layout';
+import AppLayout from '@/components/layouts/AppLayout';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Select from '@/components/workout/Select';
@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <Layout>
+    <AppLayout>
       <div className="grid grid-cols-1 grid-rows-3 flex-grow">
         <div className="flex justify-around">
           <Select
@@ -46,6 +46,6 @@ export default function Home() {
           <Button onClick={handleStart}>Start</Button>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 }

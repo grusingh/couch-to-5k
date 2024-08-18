@@ -1,4 +1,4 @@
-import Layout from '@/components/workout/Layout';
+import AppLayout from '@/components/layouts/AppLayout';
 import Button from '@/components/Button';
 import { useRouter } from 'next/router';
 
@@ -10,7 +10,7 @@ export default function Index() {
   }
 
   return (
-    <Layout>
+    <AppLayout>
       <div className="grid grid-cols-1 grid-rows-3 flex-grow">
         <header className="flex flex-col justify-center items-center">
           <h1 className="py-6 text-6xl text-green-800 font-extrabold">
@@ -27,6 +27,6 @@ export default function Index() {
           <Button onClick={handleGoHome}>Home</Button>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 }

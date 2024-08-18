@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import Layout from '@/components/workout/Layout';
+import AppLayout from '@/components/layouts/AppLayout';
 import program from '../../../../public/couchto5k.json';
 import { useEffect, useState } from 'react';
 import Button from '@/components/Button';
@@ -83,16 +83,16 @@ export default function Index() {
 
   if (!session) {
     return (
-      <Layout>
+      <AppLayout>
         <header>
           <h1 className="text-2xl">Session not found</h1>
         </header>
-      </Layout>
+      </AppLayout>
     );
   }
 
   return (
-    <Layout>
+    <AppLayout>
       <div className="grid grid-cols-1 grid-rows-[1fr_4fr_1fr] flex-grow">
         <header className="flex flex-col justify-center items-center">
           <h2 className="text-2xl font-bold">
@@ -123,6 +123,6 @@ export default function Index() {
           )}
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 }
